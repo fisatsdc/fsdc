@@ -1,7 +1,7 @@
 # FSDC
 Official FSDC website.[WIP]
 
-# Contribution
+# Contributing
 Strictly follow the [contribution guidelines](https://github.com/fisatsdc/fsdc/blob/master/CONTRIBUTING.md).
 
 # Issues
