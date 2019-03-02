@@ -1,0 +1,18 @@
+{
+  "name": "fsdc",
+  "version": "1.0.0",
+  "description": "offcial website",
+  "main": "index.js",
+  "repository": "https://github.com/fisatsdc/fsdc.git",
+  "author": "yedhink <yedhin1998@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "bulma": "^0.7.4"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "3.0.1",
+    "prettier": "1.16.4"
+  }
+}
