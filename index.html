@@ -1,14 +1,523 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta
-      charset="utf-8"
-      name="viewport"
-      content="width=device-width,initial-scale=1"
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FSDC</title>
+    <!-- <link
+      rel="shortcut icon"
+      href="../images/fav_icon.png"
+      type="image/x-icon"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Hello FSDC</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <!-- Bulma Version 0.7.4-->
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/hero.css" />
+    <link rel="stylesheet" type="text/css" href="styles/helpers.css" />
+    <link rel="stylesheet" href="css/modal-fx.min.css" />
   </head>
   <body>
-    <h1>Welcome To Fisat Student Developer Community</h1>
+    <section class="hero is-info is-fullheight is-bold">
+      <div class="hero-head">
+        <nav class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="#home">
+                <img src="images/logowhite.png" alt="Logo" />
+              </a>
+              <!-- Our hamburger icon -->
+              <span class="navbar-burger burger" data-target="navbarMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+              <div class="navbar-end">
+                <span class="navbar-item">
+                  <a class="button is-white is-outlined" href="#home" st>
+                    <span class="icon">
+                      <i class="fa fa-home"></i>
+                    </span>
+                    <span>Home</span>
+                  </a>
+                </span>
+                <span class="navbar-item">
+                  <a class="button is-white is-outlined" href="#mission">
+                    <span class="icon">
+                      <i class="fa fa-superpowers"></i>
+                    </span>
+                    <span>Mission</span>
+                  </a>
+                </span>
+                <span class="navbar-item">
+                  <a class="button is-white is-outlined" href="#contact">
+                    <span class="icon">
+                      <i class="fa fa-book"></i>
+                    </span>
+                    <span>Contact Us</span>
+                  </a>
+                </span>
+                <span class="navbar-item">
+                  <a class="button is-white is-outlined" href="#arduinoday">
+                    <span class="icon">
+                      <i class="fas fa-cogs"></i>
+                    </span>
+                    <span>Arduino Day</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Community of Innovation and Excellence
+          </h1>
+          <h2 class="subtitle">
+            We are a community of hardware and software developers belonging to
+            various departments of engineering who has come together to
+            assimilate, innovate and excel in the field of development.
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section id="mission" class="container">
+      <div class="columns features is-multiline">
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image has-text-centered">
+              <i class="fa fa-paw"></i>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Opportunity</h4>
+                <p>
+                  Provide oppurtunities to students in bringing their ideas and
+                  projects into a reality by collaborating with others.
+                </p>
+                <p><a href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image has-text-centered">
+              <i class="fa fa-empire"></i>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Work Experience</h4>
+                <p>
+                  Furnish work experience and expertise in domains that one
+                  chooses to work on using guidance from experts.
+                </p>
+                <p><a href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image has-text-centered">
+              <i class="fa fa-github"></i>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Modern Technology</h4>
+                <p>
+                  Introduce and make use of technologies which are highly
+                  relevant in the modern world.
+                </p>
+                <p><a href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image has-text-centered">
+              <i class="fa fa-heart"></i>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Solutions For You</h4>
+                <p>
+                  To provide services for the betterment of the society and
+                  build projects for clients.
+                </p>
+                <p><a href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image has-text-centered">
+              <i class="fa fa-connectdevelop"></i>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Interconnectivity</h4>
+                <p>
+                  Blend the concepts and technologies of both hardware and
+                  software field.
+                </p>
+                <p><a href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image has-text-centered">
+              <i class="fa fa-universal-access"></i>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Diversity</h4>
+                <p>
+                  Colloborate with students from various branches of engineering
+                  to develop quality products.
+                </p>
+                <p><a href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="arduinoday" class="intro">
+        <h2 class="title">Arduino Day</h2>
+        <p class="subtitle">
+          A Worldwide Celebration of the Arduino Community.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="rows">
+          <div class="row">
+            <article class="notification media has-background-white corners">
+              <figure class="media-left">
+                <span class="icon">
+                  <i class="has-text-warning fa fa-columns fa-lg"></i>
+                </span>
+              </figure>
+              <div class="media-content" style="width: 8%">
+                <div class="content">
+                  <h1 class="is-size-4">9:30am to 1:00pm</h1>
+                </div>
+              </div>
+              <div class="media-content" style="width: 8%">
+                <div class="content" style="text-align: center;">
+                  <h1 class="title is-size-4">Power Electronics Lab</h1>
+                </div>
+              </div>
+              <div
+                class="media-content content"
+                style="text-align: center;width:18%;"
+              >
+                <h1 class="title is-size-4">Arduino Workshop(Phase-1)</h1>
+              </div>
+            </article>
+          </div>
+          <br />
+          <div class="row">
+            <article class="notification media has-background-white corners">
+              <figure class="media-left">
+                <span class="icon">
+                  <i class="has-text-warning fa fa-columns fa-lg"></i>
+                </span>
+              </figure>
+              <div class="media-content" style="width: 8%">
+                <div class="content">
+                  <h1 class="is-size-4">9:30am to 4:00pm</h1>
+                </div>
+              </div>
+              <div class="media-content" style="width: 8%">
+                <div class="content" style="text-align: center;">
+                  <h1 class="title is-size-4">Fab Lab</h1>
+                </div>
+              </div>
+              <div
+                class="media-content content"
+                style="text-align: center;width:18%;"
+              >
+                <h1 class="title is-size-4">Hackathon</h1>
+              </div>
+            </article>
+          </div>
+          <br />
+          <div class="row">
+            <article class="notification media has-background-white corners">
+              <figure class="media-left">
+                <span class="icon">
+                  <i class="has-text-warning fa fa-columns fa-lg"></i>
+                </span>
+              </figure>
+              <div class="media-content" style="width: 8%">
+                <div class="content">
+                  <h1 class="is-size-4">10:00am to 10:30am</h1>
+                </div>
+              </div>
+              <div class="media-content" style="width: 8%">
+                <div class="content" style="text-align: center;">
+                  <h1 class="title is-size-4">Auditorium</h1>
+                </div>
+              </div>
+              <div
+                class="media-content content"
+                style="text-align: center;width:18%;"
+              >
+                <h1 class="title is-size-4">Project Exhibition</h1>
+              </div>
+            </article>
+          </div>
+          <br />
+          <div class="row">
+            <article class="notification media has-background-white corners">
+              <figure class="media-left">
+                <span class="icon">
+                  <i class="has-text-warning fa fa-columns fa-lg"></i>
+                </span>
+              </figure>
+              <div class="media-content" style="width: 8%">
+                <div class="content">
+                  <h1 class="is-size-4">11:00am to 12:00pm</h1>
+                </div>
+              </div>
+              <div class="media-content" style="width: 8%">
+                <div class="content" style="text-align: center;">
+                  <h1 class="title is-size-4">Main Seminar Hall</h1>
+                </div>
+              </div>
+              <div
+                class="media-content content"
+                style="text-align: center;width:18%;"
+              >
+                <h1 class="title is-size-4">Talk on IOT</h1>
+              </div>
+            </article>
+          </div>
+          <br />
+          <div class="row">
+            <article class="notification media has-background-white corners">
+              <figure class="media-left">
+                <span class="icon">
+                  <i class="has-text-warning fa fa-columns fa-lg"></i>
+                </span>
+              </figure>
+              <div class="media-content" style="width: 8%">
+                <div class="content">
+                  <h1 class="is-size-4">12:00pm to 1:00pm</h1>
+                </div>
+              </div>
+              <div class="media-content" style="width: 8%">
+                <div class="content" style="text-align: center;">
+                  <h1 class="title is-size-4">Main Seminar Hall</h1>
+                </div>
+              </div>
+              <div
+                class="media-content content"
+                style="text-align: center;width:18%;"
+              >
+                <h1 class="title is-size-4">Talk on Open Source Hardware</h1>
+              </div>
+            </article>
+          </div>
+          <br />
+          <div class="row">
+            <article class="notification media has-background-white corners">
+              <figure class="media-left">
+                <span class="icon">
+                  <i class="has-text-warning fa fa-columns fa-lg"></i>
+                </span>
+              </figure>
+              <div class="media-content" style="width: 8%">
+                <div class="content">
+                  <h1 class="is-size-4">1:00pm to 1:45pm</h1>
+                </div>
+              </div>
+              <div class="media-content" style="width: 8%">
+                <div class="content" style="text-align: center;">
+                  <h1 class="title is-size-4">Canteen</h1>
+                </div>
+              </div>
+              <div
+                class="media-content content"
+                style="text-align: center;width:18%;"
+              >
+                <h1 class="title is-size-4">Lunch Break</h1>
+              </div>
+            </article>
+          </div>
+          <br />
+          <div class="row">
+            <article class="notification media has-background-white corners">
+              <figure class="media-left">
+                <span class="icon">
+                  <i class="has-text-warning fa fa-columns fa-lg"></i>
+                </span>
+              </figure>
+              <div class="media-content" style="width: 8%">
+                <div class="content">
+                  <h1 class="is-size-4">1:45pm to 4pm</h1>
+                </div>
+              </div>
+              <div class="media-content" style="width: 8%">
+                <div class="content" style="text-align: center;">
+                  <h1 class="title is-size-4">Power Electronics Lab</h1>
+                </div>
+              </div>
+              <div
+                class="media-content content"
+                style="text-align: center;width:18%;"
+              >
+                <h1 class="title is-size-4">Arduino Workshop(Phase-2)</h1>
+              </div>
+            </article>
+          </div>
+          <br />
+          <div class="row">
+            <article class="notification media has-background-white corners">
+              <figure class="media-left">
+                <span class="icon">
+                  <i class="has-text-warning fa fa-columns fa-lg"></i>
+                </span>
+              </figure>
+              <div class="media-content" style="width: 8%">
+                <div class="content">
+                  <h1 class="is-size-4">2:00pm to 3pm</h1>
+                </div>
+              </div>
+              <div class="media-content" style="width: 8%">
+                <div class="content" style="text-align: center;">
+                  <h1 class="title is-size-4">Main Seminar Hall</h1>
+                </div>
+              </div>
+              <div
+                class="media-content content"
+                style="text-align: center;width:18%;"
+              >
+                <h1 class="title is-size-4">Expert Talk</h1>
+              </div>
+            </article>
+          </div>
+          <br />
+          <div class="row">
+            <article class="notification media has-background-white corners">
+              <figure class="media-left">
+                <span class="icon">
+                  <i class="has-text-warning fa fa-columns fa-lg"></i>
+                </span>
+              </figure>
+              <div class="media-content" style="width: 8%">
+                <div class="content">
+                  <h1 class="is-size-4">4:00pm</h1>
+                </div>
+              </div>
+              <div class="media-content" style="width: 8%">
+                <div class="content" style="text-align: center;">
+                  <h1 class="title is-size-4">Seminar Hall</h1>
+                </div>
+              </div>
+              <div
+                class="media-content content"
+                style="text-align: center;width:18%;"
+              >
+                <h1 class="title is-size-4">Prize Distribution</h1>
+              </div>
+            </article>
+          </div>
+          <br />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container has-text-centered">
+        <h2 class="title">Contact</h2>
+
+        <form>
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+                <p class="control has-icons-left">
+                  <input class="input" type="text" placeholder="Name" />
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </p>
+              </div>
+              <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                  <input class="input" type="email" placeholder="Email" />
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <textarea
+                    class="textarea"
+                    placeholder="Message us"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <button class="button is-primary">
+                    Send message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <a href="">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter-square fa-2x"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-snapchat fa-2x"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-facebook-square fa-2x"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+      <script src="../js/bulma.js"></script>
+    </footer>
   </body>
 </html>
