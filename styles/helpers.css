@@ -1,0 +1,46 @@
+.center,
+.center-column,
+.top,
+.right,
+.bottom,
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-column {
+  flex-direction: column;
+}
+
+.top {
+  align-items: flex-start;
+}
+.right {
+  justify-content: flex-end;
+}
+.botton {
+  align-items: flex-end;
+}
+.left {
+  justify-content: flex-start;
+}
+
+.single-spaced,
+.single-spaced * {
+  line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  .desktop {
+    display: none;
+  }
+}
+
+.corners {
+  border-radius: 100px;
+}
+
+.centrify {
+  width: 100px;
+  align-items: center;
+}
