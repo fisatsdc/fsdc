@@ -1,10 +1,14 @@
 .navbar-border:hover {
   border-bottom: 0.25rem solid #f1c40f;
 }
-
-.btn-animated{
-    border-bottom: 0.25rem solid #f1c40f;display: inline-block;
+.nav-text {
+  color: #e65f29;
+  text-transform: capitalize !important;
 }
-.btn-animated:hover{
-    transition: #f1340f 1s ease-in 1s;
+.has-bg-img {
+  background: url("../images/bg.png") center center;
+  /*background-size:cover;*/
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }

@@ -10,62 +10,61 @@
     <link rel="stylesheet" href="css/arduino.css" />
   </head>
   <body>
-    <section class="hero is-info is-fullheight is-bold">
-      <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <a class="navbar-item " href="#home">
-                <img
-                  width="300"
-                  height="200"
-                  src="images/LogoArduinoDay_collapsed.svg"
-                  alt="Logo"
-                />
-              </a>
-              <!-- Our hamburger icon -->
-              <span class="navbar-burger burger" data-target="navbarMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </div>
-            <div id="navbarMenu" class="navbar-menu">
-              <div class="navbar-end">
-                <span class="navbar-item navbar-border has-text-white">
-                  <span><a href="#">Events</a></span>
-                </span>
-                <span class="navbar-item navbar-border has-text-white">
-                  <span><a href="#">Register</a></span>
-                </span>
-                <span class="navbar-item navbar-border has-text-white">
-                  <span><a href="#">Contact Us</a></span>
-                </span>
-                <span class="navbar-item navbar-border has-text-white">
-                  <span><a href="#">Venue</a></span>
-                </span>
-              </div>
-            </div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item " href="#home">
+            <img
+              width="300"
+              height="200"
+              src="images/LogoArduinoDay_collapsed.svg"
+              alt="Logo"
+            />
+          </a>
+          <!-- Our hamburger icon -->
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <span class="navbar-item navbar-border has-text-white">
+              <span><a class="nav-text" href="#events">EVENTS</a></span>
+            </span>
+            <span class="navbar-item navbar-border has-text-white">
+              <span><a class="nav-text" href="#register">REGISTER</a></span>
+            </span>
+            <span class="navbar-item navbar-border has-text-white">
+              <span><a class="nav-text" href="#contact">CONTACT US</a></span>
+            </span>
+            <span class="navbar-item navbar-border has-text-white">
+              <span><a class="nav-text" href="#venue">VENUE</a></span>
+            </span>
           </div>
-        </nav>
+        </div>
       </div>
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <!--  <h1 class="title">
-            Community of Innovation and Excellence
-          </h1>-->
-          <h2 class="subtitle">
+    </nav>
+    <section class="hero has-bg-img is-fullheight" style="padding-bottom:2rem;">
+      <div class="hero-head"></div>
+      <div class="hero-body"></div>
+      <div class="hero-foot">
+        <div class="container  has-text-centered">
+          <h2 class="subtitle" style="color:#4b929c;padding-bottom:1rem;">
             Arduino Day is a worldwide birthday celebration of Arduino. It's a
             24 hour-long event – organized directly by the community, or by the
             Arduino founders – that brings people together to share their
             experiences and learn more about the open-source platform.
           </h2>
-          <div class="btn-animated">
-              <a href="#">Learn more</a>
-          </div>
+          <a class="button" style="margin-bottom:1rem;">Learn more</a>
         </div>
       </div>
     </section>
-    <script src="js/bulma.js"></script>
+    <div id="events"></div>
+    <div id="register"></div>
+    <div id="contact"></div>
+    <div id="venue"></div>
   </body>
+  <script src="js/bulma.js"></script>
 </html>
