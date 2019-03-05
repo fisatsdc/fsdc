@@ -1,0 +1,10 @@
+.navbar-border:hover {
+  border-bottom: 0.25rem solid #f1c40f;
+}
+
+.btn-animated{
+    border-bottom: 0.25rem solid #f1c40f;display: inline-block;
+}
+.btn-animated:hover{
+    transition: #f1340f 1s ease-in 1s;
+}
