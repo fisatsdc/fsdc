@@ -1,0 +1,21 @@
+.navbar-border:hover {
+  border-bottom: 0.25rem solid #f1c40f;
+}
+.nav-text {
+  color: #e65f29;
+  text-transform: capitalize !important;
+}
+.has-bg-img {
+  background:url("../images/bg.png") no-repeat center center;
+  /*background: url("../images/bg.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;*/
+  background-size: cover;
+  background-position: center;
+  
+  background-repeat: no-repeat;
+  
+  background-attachment: fixed;
+}
