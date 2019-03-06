@@ -6,16 +6,29 @@
   text-transform: capitalize !important;
 }
 .has-bg-img {
-  background:url("../images/bg.png") no-repeat center center;
-  /*background: url("../images/bg.png");
-  background-size:cover;
+  background: url("../images/bg.png") no-repeat center center;
+  background: url("../images/bg.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;*/
-  background-size: cover;
   background-position: center;
-  
+  /*background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  
-  background-attachment: fixed;
+  background-attachment: fixed;*/
 }
+
+/*Modal edition to fit the theme 
+.modal-card{
+  border:0.5rem dashed #e65300;
+}
+.modal-card-head{
+  border-top-left-radius:0;
+  border-top-right-radius:0;
+  background-color: #fff;
+  border-bottom:0.3rem dashed #e65300;
+}
+.delete{
+  background-color: #f1c40f;
+}
+*/
