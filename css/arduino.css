@@ -6,9 +6,16 @@
   text-transform: capitalize !important;
 }
 .has-bg-img {
-  background: url("../images/bg.png") center center;
-  /*background-size:cover;*/
+  background:url("../images/bg.png") no-repeat center center;
+  /*background: url("../images/bg.png");
+  background-size:cover;
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;*/
+  background-size: cover;
   background-position: center;
+  
+  background-repeat: no-repeat;
+  
+  background-attachment: fixed;
 }
