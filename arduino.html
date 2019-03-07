@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Arduino Day</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
     <!-- Bulma Version 0.7.4-->
     <link rel="stylesheet" href="css/bulma.min.css" />
     <link rel="stylesheet" href="css/arduino.css" />
+    <link rel="stylesheet" href="css/bulma-timeline.min.css" />
+    <link rel="stylesheet" href="css/modal-fx.min.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -15,7 +21,7 @@
         <div class="navbar-brand">
           <a class="navbar-item " href="#home">
             <img
-              width="300"
+              width="150"
               height="200"
               src="images/LogoArduinoDay_collapsed.svg"
               alt="Logo"
@@ -51,20 +57,216 @@
       <div class="hero-body"></div>
       <div class="hero-foot">
         <div class="container  has-text-centered">
-          <h2 class="subtitle" style="color:#4b929c;padding-bottom:1rem;">
-            Arduino Day is a worldwide birthday celebration of Arduino. It's a
-            24 hour-long event – organized directly by the community, or by the
-            Arduino founders – that brings people together to share their
-            experiences and learn more about the open-source platform.
-          </h2>
-          <a class="button" style="margin-bottom:1rem;">Learn more</a>
+          <a
+            class="button is-large "
+            style="margin-bottom:3rem;border: 1px solid #e65300;color:#edb235;"
+            >Learn more</a
+          >
         </div>
       </div>
     </section>
-    <div id="events"></div>
+
+    <div id="events" style="background-color:#e65300;">
+      <div
+        class="title has-text-centered has-text-white is-size-2"
+        style="padding-top:3rem;padding-bottom:1rem; "
+      >
+        Events
+      </div>
+      <div class="timeline is-centered" style="padding:2rem;">
+        <div class="timeline-item is-warning">
+          <div class="timeline-marker is-warning is-image is-32x32">
+            <img src="images/circle_yellow.png" />
+          </div>
+          <div class="timeline-content">
+            <a
+              class=" heading is-size-4 title glow has-text-white modal-button"
+              data-target="#"
+              >Inauguration<i class="fas fa-angle-right "></i
+            ></a>
+            <p class="heading has-text-white is-size-9">9:30 AM - 10:00 AM</p>
+            <p class="heading has-text-white is-size-9 subtitle">
+              Main Seminar Hall
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item is-warning">
+          <div class="timeline-marker is-warning is-image is-32x32">
+            <img src="images/circle_yellow.png" />
+          </div>
+          <div class="timeline-content">
+            <a
+              class=" heading is-size-4 title glow has-text-white modal-button"
+              data-target="#hackathon"
+              >Hackathon<i class="fas fa-angle-right "></i
+            ></a>
+            <p class="heading has-text-white is-size-9  is-marginless">
+              10:00 AM - 4:00 PM
+            </p>
+            <p class="heading has-text-white is-size-9 subtitle">FAB Lab</p>
+          </div>
+        </div>
+
+        <div class="timeline-item is-warning">
+          <div class="timeline-marker is-warning is-image is-32x32">
+            <img src="images/circle_yellow.png" />
+          </div>
+          <div class="timeline-content">
+            <a
+              class=" heading is-size-4 title glow has-text-white modal-button"
+              data-target="#"
+              >Arduino workshop<i class="fas fa-angle-right "></i
+            ></a>
+            <p class="heading has-text-white is-size-9">10:00 AM - 4:00 PM</p>
+            <p class="heading has-text-white is-size-9 subtitle">
+              Microprocessor Lab
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item is-warning">
+          <div class="timeline-marker is-warning is-image is-32x32">
+            <img src="images/circle_yellow.png" />
+          </div>
+          <div class="timeline-content">
+            <a
+              class=" heading is-size-4 title glow has-text-white modal-button"
+              data-target="#"
+              >Project Expo<i class="fas fa-angle-right "></i
+            ></a>
+            <p class="heading has-text-white is-size-9">10:00 AM - 4:00 PM</p>
+            <p class="heading has-text-white is-size-9 subtitle">
+              Systems Lab,ECE Dept.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item is-warning">
+          <div class="timeline-marker is-warning is-image is-32x32">
+            <img src="images/circle_yellow.png" />
+          </div>
+          <div class="timeline-content">
+            <a
+              class=" heading is-size-4 title glow has-text-white modal-button"
+              data-target="#"
+              >Talk on IOT<i class="fas fa-angle-right "></i
+            ></a>
+            <p class="heading has-text-white is-size-9 ">10:00 AM - 12:00 PM</p>
+            <p class="heading has-text-white is-size-9 subtitle">
+              Main Seminar Hall
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item is-warning">
+          <div class="timeline-marker is-warning is-image is-32x32">
+            <img src="images/circle_yellow.png" />
+          </div>
+          <div class="timeline-content">
+            <a
+              class=" heading is-size-4 title glow has-text-white modal-button"
+              data-target="#"
+              >Talk on Open Hardware<i class="fas fa-angle-right "></i
+            ></a>
+            <p class="heading has-text-white is-size-9">12:00 PM - 1:00 PM</p>
+            <p class="heading has-text-white is-size-9 subtitle">
+              Main Seminar Hall
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item is-warning">
+          <div class="timeline-marker is-warning is-image is-32x32">
+            <img src="images/circle_yellow.png" />
+          </div>
+          <div class="timeline-content">
+            <a
+              class=" heading is-size-5 title glow has-text-white modal-button"
+              data-target="#"
+              >Talk with Arduino experts<i class="fas fa-angle-right "></i
+            ></a>
+            <p class="heading has-text-white is-size-9">1:30 PM - 4:00 PM</p>
+            <p class="heading has-text-white is-size-9 subtitle">
+              Main Seminar Hall
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item is-warning">
+          <div class="timeline-marker is-warning is-image is-32x32">
+            <img src="images/circle_yellow.png" />
+          </div>
+          <div class="timeline-content">
+            <a
+              class=" heading is-size-4 title glow has-text-white modal-button"
+              data-target="#"
+              >Prize distribution <i class="fas fa-angle-right "></i
+            ></a>
+            <p class="heading has-text-white is-size-9">4:00 AM - 4:30 PM</p>
+            <p class="heading has-text-white is-size-9 subtitle">
+              Main Seminar Hall
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modals for the Events-->
+      <div id="hackathon" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Hackathon</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <div class="content">
+              -
+              <h4>Abstract</h4>
+              <p>
+                ICEFOSS 2019, scheduled on February 19 and 20, brings to you
+                ‘Women Hackathon’, conducted in association with ICFOSS. It is a
+                hackathon exclusively for women which aims to connect and
+                inspire women, and be a stepping stone in furthering education
+                and technological career. Women hackathon provides both an
+                opportunity to create space that will make women leaders of
+                technology and an attempt to solve social problems which can
+                improve the lives of women around the world.
+              </p>
+
+              <p>
+                During DAY 1 of the Event, participants will be taught the best
+                industrial practices and will be given a detailed introduction
+                into various domains by leading industry experts.
+              </p>
+              <p>
+                On the 2nd Day, participants have a chance to showcase their
+                creativity and skillset by brainstorming their ideas and making
+                a prototype with what have they have been taught the previous
+                day.
+              </p>
+              <h2>Resource Person</h2>
+              <ul>
+                <li>Dr.Sreeraj M</li>
+                <li>Adam Shamsudeen</li>
+                <li>Sandhini S</li>
+                <li>Keerthana Ashok</li>
+              </ul>
+
+              <h2>Venue</h2>
+              <ul>
+                <li>19-02-2019 : M-Tech Lab (North Block)</li>
+                <li>20-02-2019 : Central Computing Facility L5</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
     <div id="register"></div>
     <div id="contact"></div>
     <div id="venue"></div>
   </body>
   <script src="js/bulma.js"></script>
+  <script src="js/modal.js"></script>
 </html>
