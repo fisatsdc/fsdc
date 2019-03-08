@@ -280,7 +280,7 @@
     <div id="register"></div>
     <div id="contact"></div>
 
-    <section id="venue">
+    <section id="venue" style="padding-bottom: 3rem;">
       <div class="container">
         <div class="title has-text-centered" style="color:#e65300; padding-top: 4rem;">Venue</div>
         <div class="columns is-vcentered">
@@ -308,20 +308,25 @@
   <script>
     var mymap = L.map('map').setView([10.2315, 76.4088], 10);
     var accesstoken = 'pk.eyJ1IjoidGFuZ2VyaW5lOTgiLCJhIjoiY2pzd2hsYXdmMDdkZDQ0bzJmaWhpNGZqYiJ9.Ckgmiw11duZvp4N93ztQVw';
+    
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-      //attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
       maxZoom: 18,
       id: 'mapbox.streets',
       accessToken: accesstoken
     }).addTo(mymap);
+    
     var customMarker = L.icon({
       iconUrl : 'images/pin-orange.png',
       iconSize:     [38, 53], // size of the icon
-      //iconAnchor:   [14, 53], // point of the icon which will correspond to marker's location
       popupAnchor:  [0, -26] 
-    })
-    //var marker = L.marker([10.2315, 76.4088] {icon: customMarker}).addTo(mymap);
+    });
+    var popup = L.popup()
+      .setContent("<b>Federal Institute of Science and Technology</b><br>Angamaly<br><a href='https://www.google.com/maps/place/Federal+Institute+of+Science+And+Technology+(FISAT)%C2%AE/@10.2315176,76.406651,17z/data=!3m1!4b1!4m5!3m4!1s0x3b08068aa17bd247:0xf048b9ebcbd2af28!8m2!3d10.2315176!4d76.4088397'>Get Directions</a>")
     var marker = L.marker([10.2315, 76.4088], {icon: customMarker}).addTo(mymap);
-    marker.bindPopup("<b>Federal Institute of Science and Technology</b><br>Angamaly<br><a href='https://www.google.com/maps/place/Federal+Institute+of+Science+And+Technology+(FISAT)%C2%AE/@10.2315176,76.406651,17z/data=!3m1!4b1!4m5!3m4!1s0x3b08068aa17bd247:0xf048b9ebcbd2af28!8m2!3d10.2315176!4d76.4088397'>Get Directions</a>");
+    
+    marker.bindPopup(popup);
+    marker.on('mouseover', function (e) {
+      this.openPopup();
+    });
   </script>
 </html>
