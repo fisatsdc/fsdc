@@ -1,10 +1,34 @@
 .navbar-border:hover {
   border-bottom: 0.25rem solid #f1c40f;
 }
+.nav-text {
+  color: #e65f29;
+  text-transform: capitalize !important;
+}
+.has-bg-img {
+  background: url("../images/bg.png") no-repeat center center;
+  background: url("../images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /*background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;*/
+}
 
-.btn-animated{
-    border-bottom: 0.25rem solid #f1c40f;display: inline-block;
+/*Modal edition to fit the theme 
+.modal-card{
+  border:0.5rem dashed #e65300;
 }
-.btn-animated:hover{
-    transition: #f1340f 1s ease-in 1s;
+.modal-card-head{
+  border-top-left-radius:0;
+  border-top-right-radius:0;
+  background-color: #fff;
+  border-bottom:0.3rem dashed #e65300;
 }
+.delete{
+  background-color: #f1c40f;
+}
+*/
