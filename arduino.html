@@ -14,6 +14,20 @@
     <link rel="stylesheet" href="css/arduino.css" />
     <link rel="stylesheet" href="css/bulma-timeline.min.css" />
     <link rel="stylesheet" href="css/modal-fx.min.css" />
+
+    <!--For leaflet map-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""></script>
+    <style>
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar">
@@ -265,8 +279,49 @@
     </div>
     <div id="register"></div>
     <div id="contact"></div>
-    <div id="venue"></div>
+
+    <section id="venue">
+      <div class="container">
+        <div class="title has-text-centered" style="color:#e65300; padding-top: 4rem;">Venue</div>
+        <div class="columns is-vcentered">
+          <div class="column is-half" style="padding-top:3rem;">
+            <!--<p class="has-text-centered is-size-3" style="padding-top:3rem;color: #606ae7;">Venue</p>-->
+            <p class="is-size-4 has-text-centered" style="padding-top:1rem;">
+              Federal Institute of Science and Technology<br>
+              Hormis Nagar, Mookkannoor<br>
+              Angamaly, Kerala-683577
+            </p>
+            <!--<p class="is-size-4 has-text-centered" style="padding-bottom: 3rem;">
+              <a href="http://fisat.ac.in/pages/conveyance-facilities">Click here for conveyance details.</a>
+            </p>-->
+          </div>
+          <div class="column is-half" style="padding-top:3rem;">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </body>
   <script src="js/bulma.js"></script>
   <script src="js/modal.js"></script>
+  <script>
+    var mymap = L.map('map').setView([10.2315, 76.4088], 10);
+    var accesstoken = 'pk.eyJ1IjoidGFuZ2VyaW5lOTgiLCJhIjoiY2pzd2hsYXdmMDdkZDQ0bzJmaWhpNGZqYiJ9.Ckgmiw11duZvp4N93ztQVw';
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+      //attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox.streets',
+      accessToken: accesstoken
+    }).addTo(mymap);
+    var customMarker = L.icon({
+      iconUrl : 'images/pin-orange.png',
+      iconSize:     [38, 53], // size of the icon
+      //iconAnchor:   [14, 53], // point of the icon which will correspond to marker's location
+      popupAnchor:  [0, -26] 
+    })
+    //var marker = L.marker([10.2315, 76.4088] {icon: customMarker}).addTo(mymap);
+    var marker = L.marker([10.2315, 76.4088], {icon: customMarker}).addTo(mymap);
+    marker.bindPopup("<b>Federal Institute of Science and Technology</b><br>Angamaly<br><a href='https://www.google.com/maps/place/Federal+Institute+of+Science+And+Technology+(FISAT)%C2%AE/@10.2315176,76.406651,17z/data=!3m1!4b1!4m5!3m4!1s0x3b08068aa17bd247:0xf048b9ebcbd2af28!8m2!3d10.2315176!4d76.4088397'>Get Directions</a>");
+  </script>
 </html>
