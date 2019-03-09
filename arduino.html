@@ -12,6 +12,7 @@
     <!-- Bulma Version 0.7.4-->
     <link rel="stylesheet" href="css/bulma.min.css" />
     <link rel="stylesheet" href="css/arduino.css" />
+    <link rel="stylesheet" href="css/nav-bar.css" />
     <link rel="stylesheet" href="css/bulma-timeline.min.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/modal-fx.min.css" />
@@ -36,7 +37,7 @@
     </style>
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar sticky">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item " href="#home">
@@ -686,6 +687,7 @@
   <script src="js/bulma.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/smooth_scroll.js"></script>
+  <script src="js/sticky_nav.js"></script>
   <script>
     var mymap = L.map("map").setView([10.2315, 76.4088], 10);
     var accesstoken =

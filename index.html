@@ -19,15 +19,17 @@
       rel="stylesheet"
     />
     <!-- Bulma Version 0.7.4-->
-    <link rel="stylesheet" href="css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/nav-bar.css" />
     <link rel="stylesheet" type="text/css" href="css/hero.css" />
     <link rel="stylesheet" type="text/css" href="styles/helpers.css" />
-    <link rel="stylesheet" href="css/modal-fx.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal-fx.min.css" />
   </head>
   <body>
-    <section class="hero is-info is-fullheight is-bold">
+    <!-- hackish way added bg color...add to css later -->
+    <section class="hero is-info is-fullheight is-bold" style="background: #0e4d92; !important">
       <div class="hero-head">
-        <nav class="navbar">
+        <nav class="navbar sticky" style="background: #0e4d92 !important">
           <div class="container">
             <div class="navbar-brand">
               <a class="navbar-item" href="#home">
@@ -439,7 +441,7 @@
     HERE BE MODALS
     ===============  -->
     <!-- 3dFlipVertical card tiny -->
-    <div id="modal-card" class="modal modal-fx-3dSlit">
+    <div id="modal-card-hardware" class="modal modal-fx-3dSlit">
       <div class="modal-background"></div>
       <div class="modal-content is-tiny">
         <!-- content -->
