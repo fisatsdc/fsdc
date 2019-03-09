@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "bulma": "^0.7.4"
+    "bulma": "^0.7.4",
+    "package.json": "^2.0.1"
   },
   "devDependencies": {
     "eslint-config-prettier": "^4.1.0",

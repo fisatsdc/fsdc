@@ -44,8 +44,6 @@ everyone is a beginner at first :smile_cat:
 Your patch should follow the same conventions & pass the same code quality
 checks as the rest of the project.  
 
-Kindly make sure that you strictly stick onto the **google coding style.** For [html/css refer here](https://google.github.io/styleguide/htmlcssguide.html).
-
 Auto-formatting can be done directly via your text editor. [See how auto-formatting can be done](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode).
 
 ### 5. Make a Pull Request

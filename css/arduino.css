@@ -17,8 +17,25 @@
   background-repeat: no-repeat;
   background-attachment: fixed;*/
 }
+.modal.is-active .modal-background {
+  opacity: 0.5 !important;
+}
+.modal-card {
+  overflow-y: hidden;
+  border: 3px solid #e65f29;
+}
+.modal-card-head {
+  background-color: #f2f6d0;
+  border: 1px solid #e65f29;
+}
+.modal-card-body {
+  background-color: #f2f6d0;
+}
 
-/*Modal edition to fit the theme 
+.heading-padding {
+  padding-top: 1.5rem;
+}
+/*Modal edition to fit the theme
 .modal-card{
   border:0.5rem dashed #e65300;
 }
@@ -28,7 +45,10 @@
   background-color: #fff;
   border-bottom:0.3rem dashed #e65300;
 }
-.delete{
-  background-color: #f1c40f;
-}
 */
+#map {
+  z-index: 1 !important;
+}
+#modal {
+  z-index: 2 !important;
+}
