@@ -17,24 +17,23 @@
   background-repeat: no-repeat;
   background-attachment: fixed;*/
 }
-.modal.is-active .modal-background{
-    opacity:0.5 !important;
+.modal.is-active .modal-background {
+  opacity: 0.5 !important;
 }
-.modal-card{
+.modal-card {
   overflow-y: hidden;
-  border:3px solid #e65f29;
+  border: 3px solid #e65f29;
 }
-.modal-card-head{
+.modal-card-head {
   background-color: #f2f6d0;
-  border:1px solid #e65f29;
+  border: 1px solid #e65f29;
 }
-.modal-card-body{
+.modal-card-body {
   background-color: #f2f6d0;
 }
 
-
-.heading-padding{
-  padding-top:1.5rem;
+.heading-padding {
+  padding-top: 1.5rem;
 }
 /*Modal edition to fit the theme
 .modal-card{
@@ -47,3 +46,9 @@
   border-bottom:0.3rem dashed #e65300;
 }
 */
+#map {
+  z-index: 1 !important;
+}
+#modal {
+  z-index: 2 !important;
+}
