@@ -1,11 +1,17 @@
-document.querySelectorAll('.modal-button').forEach(function(el) {
-    el.addEventListener('click', function() {
-      var target = document.querySelector(el.getAttribute('data-target'));
-
-      target.classList.add('is-active');
-
-      target.querySelector('.delete').addEventListener('click',   function() {
-          target.classList.remove('is-active');
-       });
-    });
+ $(document).ready(function() {
+  $(".modal-button").click(function() {
+    var target = $(this).data("target");
+    $("html").addClass("is-clipped");
+    $(target).addClass("is-active");
   });
+  $(".delete").click(function() {
+    $("html").removeClass("is-clipped");
+    var target = "#"+$(this).parent().parent().parent().attr('id');
+    $(target).removeClass("is-active");
+  });
+  $(".modal-background").click(function() {
+    $("html").removeClass("is-clipped");
+    var target = "#" + $(this).parent().attr('id');
+    $(target).removeClass("is-active");
+  });
+});
