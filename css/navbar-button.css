@@ -1,0 +1,57 @@
+.svg-wrapper {
+  /*height: 30px;*/
+	margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  /*width: 160px;*/
+
+  height: 30px;
+  width: 160px;
+}
+
+.shape {
+  fill: transparent;
+  /*stroke-dasharray: 70 270;
+  stroke-dashoffset: -237;
+  stroke-width: 4px;*/
+
+  stroke-dasharray: 70 270;
+  stroke-dashoffset: -237;
+  stroke-width: 4px;
+  stroke: #ffffff;
+}
+
+.text {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 20px;
+  position: relative;
+  top: -35px;
+}
+
+@keyframes draw {
+  0% {
+    /*stroke-dasharray: 70 270;
+    stroke-dashoffset: -237;
+    stroke-width: 4px;*/
+
+    stroke-dasharray: 70 270;
+    stroke-dashoffset: -237;
+    stroke-width: 4px;
+  }
+  100% {
+    /*stroke-dasharray: 380;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;*/
+
+    stroke-dasharray: 380;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
