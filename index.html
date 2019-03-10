@@ -1,418 +1,409 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>FSDC</title>
-    <!-- <link
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FSDC</title>
+  <!-- <link
       rel="shortcut icon"
       href="../images/fav_icon.png"
       type="image/x-icon"
     /> -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
-      rel="stylesheet"
-    />
-    <!-- Bulma Version 0.7.4-->
-    <link rel="stylesheet" type="text/css" href="css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/nav-bar.css" />
-    <link rel="stylesheet" type="text/css" href="css/hero.css" />
-    <link rel="stylesheet" type="text/css" href="styles/helpers.css" />
-    <link rel="stylesheet" type="text/css" href="css/modal-fx.min.css" />
-  </head>
-  <body>
-    <!-- hackish way added bg color...add to css later -->
-    <section class="hero is-info is-fullheight is-bold" style="background: #0e4d92; !important">
-      <div class="hero-head">
-        <nav class="navbar sticky" style="background: #0e4d92 !important">
-          <div class="container">
-            <div class="navbar-brand">
-              <a class="navbar-item" href="#home">
-                <img src="images/logowhite.png" alt="Logo" />
-              </a>
-              <!-- Our hamburger icon -->
-              <span class="navbar-burger burger" data-target="navbarMenu">
-                <span></span>
-                <span></span>
-                <span></span>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <!-- Bulma Version 0.7.4-->
+  <!-- <link rel="stylesheet" type="text/css" href="styles/debug.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/nav-bar.css" />
+  <link rel="stylesheet" type="text/css" href="css/hero.css" />
+  <link rel="stylesheet" type="text/css" href="styles/helpers.css" />
+  <link rel="stylesheet" type="text/css" href="css/modal-fx.min.css" />
+</head>
+
+<body>
+  <!-- hackish way added bg color...add to css later -->
+  <section class="hero is-info is-fullheight is-bold" style="background: #0e4d92 !important;">
+    <div class="hero-head">
+      <nav class="navbar sticky" style="background: #0e4d92 !important">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" style="background: #0e4d92 !important;" href="/">
+              <img src="images/logowhite.png" alt="Logo" />
+            </a>
+            <!-- Our hamburger icon -->
+            <span class="navbar-burger burger" style="color: aqua;" data-target="navbarMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenu" class="navbar-menu" style="background: #0e4d92;">
+            <div class="navbar-end">
+              <span class="navbar-item">
+                <a class="button is-white is-outlined" href="#home" st>
+                  <span class="icon">
+                    <i class="fa fa-home"></i>
+                  </span>
+                  <span>Home</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a class="button is-white is-outlined" href="#mission">
+                  <span class="icon">
+                    <i class="fa fa-superpowers"></i>
+                  </span>
+                  <span>Mission</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a class="button is-white is-outlined" href="#division">
+                  <span class="icon">
+                    <i class="fa fa-building"></i>
+                  </span>
+                  <span>Our Divisions</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a class="button is-white is-outlined" href="#contact">
+                  <span class="icon">
+                    <i class="fa fa-book"></i>
+                  </span>
+                  <span>Contact Us</span>
+                </a>
+              </span>
+              <span class="navbar-item">
+                <a class="button is-white is-outlined" href="arduino.html">
+                  <span class="icon">
+                    <i class="fa fa-cogs"></i>
+                  </span>
+                  <span>Arduino Day</span>
+                </a>
               </span>
             </div>
-            <div id="navbarMenu" class="navbar-menu">
-              <div class="navbar-end">
-                <span class="navbar-item">
-                  <a class="button is-white is-outlined" href="#home" st>
-                    <span class="icon">
-                      <i class="fa fa-home"></i>
-                    </span>
-                    <span>Home</span>
-                  </a>
-                </span>
-                <span class="navbar-item">
-                  <a class="button is-white is-outlined" href="#mission">
-                    <span class="icon">
-                      <i class="fa fa-superpowers"></i>
-                    </span>
-                    <span>Mission</span>
-                  </a>
-                </span>
-                <span class="navbar-item">
-                  <a class="button is-white is-outlined" href="#division">
-                    <span class="icon">
-                        <i class="fa fa-building"></i>
-                    </span>
-                    <span>Our Divisions</span>
-                  </a>
-                </span>
-                <span class="navbar-item">
-                  <a class="button is-white is-outlined" href="#contact">
-                    <span class="icon">
-                      <i class="fa fa-book"></i>
-                    </span>
-                    <span>Contact Us</span>
-                  </a>
-                </span>
-                <span class="navbar-item">
-                  <a class="button is-white is-outlined" href="arduino.html">
-                    <span class="icon">
-                      <i class="fa fa-cogs"></i>
-                    </span>
-                    <span>Arduino Day</span>
-                  </a>
-                </span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          Community of Innovation and Excellence
+        </h1>
+        <h2 class="subtitle">
+          We are a community of hardware and software developers belonging to
+          various departments of engineering who has come together to
+          assimilate, innovate and excel in the field of development.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <section id="mission" class="container">
+    <div class="columns features is-multiline">
+      <div class="column is-4">
+        <div class="card is-shady">
+          <div class="card-image has-text-centered">
+            <i class="fa fa-paw"></i>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4>Opportunity</h4>
+              <p>
+                Provide oppurtunities to students in bringing their ideas and
+                projects into a reality by collaborating with others.
+              </p>
+              <p><a href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card is-shady">
+          <div class="card-image has-text-centered">
+            <i class="fa fa-empire"></i>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4>Work Experience</h4>
+              <p>
+                Furnish work experience and expertise in domains that one
+                chooses to work on using guidance from experts.
+              </p>
+              <p><a href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card is-shady">
+          <div class="card-image has-text-centered">
+            <i class="fa fa-github"></i>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4>Modern Technology</h4>
+              <p>
+                Introduce and make use of technologies which are highly
+                relevant in the modern world.
+              </p>
+              <p><a href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card is-shady">
+          <div class="card-image has-text-centered">
+            <i class="fa fa-heart"></i>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4>Solutions For You</h4>
+              <p>
+                To provide services for the betterment of the society and
+                build projects for clients.
+              </p>
+              <p><a href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card is-shady">
+          <div class="card-image has-text-centered">
+            <i class="fa fa-connectdevelop"></i>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4>Interconnectivity</h4>
+              <p>
+                Blend the concepts and technologies of both hardware and
+                software field.
+              </p>
+              <p><a href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="card is-shady">
+          <div class="card-image has-text-centered">
+            <i class="fa fa-universal-access"></i>
+          </div>
+          <div class="card-content">
+            <div class="content">
+              <h4>Diversity</h4>
+              <p>
+                Colloborate with students from various branches of engineering
+                to develop quality products.
+              </p>
+              <p><a href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services -->
+
+    <section class="container" id="division">
+      <div class="columns features">
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="images/hardware.jpg" alt="Placeholder image" class="modal-button"
+                  data-target="modal-image2" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Hardware</h4>
+                <p>
+                  We have a well-developed ecosystem for innovation in the
+                  hardware domain, with the availability of exquisite lab
+                  facilities for testing/simulating products and taking them
+                  to market.
+                </p>
+                <span class="button is-link modal-button" data-target="modal-card-hardware">View more</span>
               </div>
             </div>
           </div>
-        </nav>
+        </div>
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="images/embedded.jpg" alt="Placeholder image" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Embedded Product Design</h4>
+                <p>
+                  With our strong expertise in the engineering of electronics,
+                  firmware & software, we help the customer to realize their
+                  vision of products.
+                </p>
+                <span class="button is-link modal-button" data-target="modal-card-embed">View More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4 modal-button" data-target="modal-image">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="images/ai-ml.jpeg" alt="Placeholder image" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>AI/ML</h4>
+                <p>
+                  Our AI/ML solutions focus mainly on Recommender Systems, AI
+                  Tagging, AI Merchandizing, Object Detection Systems and
+                  Speech Synthesis.
+                </p>
+                <span class="button is-link modal-button" data-target="modal-card-ai">View More</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title">
-            Community of Innovation and Excellence
-          </h1>
-          <h2 class="subtitle">
-            We are a community of hardware and software developers belonging to
-            various departments of engineering who has come together to
-            assimilate, innovate and excel in the field of development.
-          </h2>
+      <div class="columns features">
+        <div class="column is-4 modal-button" data-target="modal-card-ar">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="images/augmented-reality.jpg" alt="Placeholder image" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>
+                  AR/VR
+                </h4>
+                <p>
+                  We primarily use Mobile Virtual Reality for helping in
+                  visualizing architectural drawings using Immersive
+                  techonology. We are also trying to close the gaps and
+                  inefficiency in Real Estate sales process primarily by using
+                  cutting-edge technology to augment the existing sales
+                  process.
+                </p>
+                <span class="button is-link modal-button">View More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="images/software.png" alt="butterfly image" class="modal-button"
+                  data-target="modal-card-soft" />
+              </figure>
+            </div>
+            <div class="card-content  modal-button" data-target="modal-card-soft">
+              <div class="content">
+                <h4>
+                  Software Development
+                </h4>
+                <p>
+                  We build cost-effective, high-quality & technology driven
+                  products, by leveraging the power of open source tools, for
+                  Web/Mobile, Linux & Custom Embedded Software, IOT, System
+                  Programming, Cloud, Robotics, Automation and for the Open
+                  Source Community.
+                </p>
+                <span class="button is-link modal-button">View More</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section id="mission" class="container">
-      <div class="columns features is-multiline">
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image has-text-centered">
-              <i class="fa fa-paw"></i>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Opportunity</h4>
-                <p>
-                  Provide oppurtunities to students in bringing their ideas and
-                  projects into a reality by collaborating with others.
-                </p>
-                <p><a href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image has-text-centered">
-              <i class="fa fa-empire"></i>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Work Experience</h4>
-                <p>
-                  Furnish work experience and expertise in domains that one
-                  chooses to work on using guidance from experts.
-                </p>
-                <p><a href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image has-text-centered">
-              <i class="fa fa-github"></i>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Modern Technology</h4>
-                <p>
-                  Introduce and make use of technologies which are highly
-                  relevant in the modern world.
-                </p>
-                <p><a href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image has-text-centered">
-              <i class="fa fa-heart"></i>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Solutions For You</h4>
-                <p>
-                  To provide services for the betterment of the society and
-                  build projects for clients.
-                </p>
-                <p><a href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image has-text-centered">
-              <i class="fa fa-connectdevelop"></i>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Interconnectivity</h4>
-                <p>
-                  Blend the concepts and technologies of both hardware and
-                  software field.
-                </p>
-                <p><a href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-4">
-          <div class="card is-shady">
-            <div class="card-image has-text-centered">
-              <i class="fa fa-universal-access"></i>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                <h4>Diversity</h4>
-                <p>
-                  Colloborate with students from various branches of engineering
-                  to develop quality products.
-                </p>
-                <p><a href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Services -->
 
-      <section class="container" id="division">
-        <div class="columns features">
-          <div class="column is-4">
-            <div class="card is-shady">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img
-                    src="images/hardware.jpg"
-                    alt="Placeholder image"
-                    class="modal-button"
-                    data-target="modal-image2"
-                  />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="content">
-                  <h4>Hardware</h4>
-                  <p>
-                    We have a well-developed ecosystem for innovation in the
-                    hardware domain, with the availability of exquisite lab
-                    facilities for testing/simulating products and taking them
-                    to market.
-                  </p>
-                  <span
-                    class="button is-link modal-button"
-                    data-target="modal-card-hardware"
-                    >View more</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column is-4">
-            <div class="card is-shady">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img
-                    src="images/embedded.jpg"
-                    alt="Placeholder image"
-                  />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="content">
-                  <h4>Embedded Product Design</h4>
-                  <p>
-                    With our strong expertise in the engineering of electronics,
-                    firmware & software, we help the customer to realize their
-                    vision of products.
-                  </p>
-                  <span
-                    class="button is-link modal-button"
-                    data-target="modal-card-embed"
-                    >View More</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column is-4 modal-button" data-target="modal-image">
-            <div class="card is-shady">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img
-                    src="images/ai-ml.jpeg"
-                    alt="Placeholder image"
-                  />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="content">
-                  <h4>AI/ML</h4>
-                  <p>
-                    Our AI/ML solutions focus mainly on Recommender Systems, AI
-                    Tagging, AI Merchandizing, Object Detection Systems and
-                    Speech Synthesis.
-                  </p>
-                  <span
-                    class="button is-link modal-button"
-                    data-target="modal-card-ai"
-                    >View More</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="columns features">
-          <div class="column is-4 modal-button" data-target="modal-card-ar">
-            <div class="card is-shady">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img
-                    src="images/augmented-reality.jpg"
-                    alt="Placeholder image"
-                  />
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="content">
-                  <h4>
-                    AR/VR
-                  </h4>
-                  <p>
-                    We primarily use Mobile Virtual Reality for helping in
-                    visualizing architectural drawings using Immersive
-                    techonology. We are also trying to close the gaps and
-                    inefficiency in Real Estate sales process primarily by using
-                    cutting-edge technology to augment the existing sales
-                    process.
-                  </p>
-                  <span class="button is-link modal-button">View More</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column is-4">
-            <div class="card is-shady">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img
-                    src="images/software.png"
-                    alt="butterfly image"
-                    class="modal-button"
-                    data-target="modal-card-soft"
-                  />
-                </figure>
-              </div>
-              <div class="card-content  modal-button" data-target="modal-card-soft">
-                <div class="content">
-                  <h4>
-                    Software Development
-                  </h4>
-                  <p>
-                    We build cost-effective, high-quality & technology driven
-                    products, by leveraging the power of open source tools, for
-                    Web/Mobile, Linux & Custom Embedded Software, IOT, System
-                    Programming, Cloud, Robotics, Automation and for the Open
-                    Source Community.
-                  </p>
-                  <span class="button is-link modal-button">View More</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+    <!-- CONTACT US -->
     <section id="contact" class="section">
-      <div class="container has-text-centered">
-        <h2 class="title">Contact</h2>
-
-        <form>
-          <div class="field is-horizontal">
-            <div class="field-body">
-              <div class="field">
-                <p class="control has-icons-left">
-                  <input class="input" type="text" placeholder="Name" />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="field">
-                <p class="control has-icons-left has-icons-right">
-                  <input class="input" type="email" placeholder="Email" />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="field is-horizontal">
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <textarea
-                    class="textarea"
-                    placeholder="Message us"
-                  ></textarea>
+      <div class="container">
+        <div class="columns is-desktop">
+          <div class="column is-7" style="margin-right:15%;">
+            <h2 class="title">Get in Touch</h2>
+            <form>
+              <div class="field is-horizontal">
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control has-icons-left">
+                      <input class="input" type="text" placeholder="Name" />
+                      <span class="icon is-small is-left">
+                        <i class="fa fa-user"></i>
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <!-- God horrible hack -->
-            <span>Or mail us at fisatsdc@gmail.com</span>
-            <br>
-
-          <div class="field is-horizontal">
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <button class="button is-primary">
-                    Send message
-                  </button>
+              <div class="field is-horizontal">
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control has-icons-left has-icons-right">
+                      <input class="input" type="email" placeholder="Email" />
+                      <span class="icon is-small is-left">
+                        <i class="fa fa-envelope"></i>
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+
+              <div class="field is-horizontal">
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <textarea class="textarea" placeholder="Message us"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-horizontal">
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <button class="button is-primary">
+                        Send message
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
-        </form>
-      </div>
+          <div class="column is-4">
+            <h2 class="title">Connect with us</h2>
+            <p>
+              For support or any questions:
+              <br>
+              Email us at fisatsdc@gmail.com
+              <br>
+              or call +91 7907157039
+              <br>
+              <br>
+              <strong>FISAT Student Developer Community (FSDC)</strong>
+              <br>
+              Federal Institute of Science And Technology,
+              <br>
+              Hormis Nagar, Mookkannoor P O,
+              <br>
+              Angamaly, Ernakulam,
+              <br>
+              Kerala, India,
+              <br>
+              Pin - 683 577
+            </p>
+          </div>
+          </div>
     </section>
 
     <footer class="footer">
@@ -448,20 +439,14 @@
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img
-                src="https://source.unsplash.com/6Ticnhs1AG0"
-                alt="Placeholder image"
-              />
+              <img src="https://source.unsplash.com/6Ticnhs1AG0" alt="Placeholder image" />
             </figure>
           </div>
           <div class="card-content">
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img
-                    src="http://www.radfaces.com/images/avatars/linda-barret.jpg"
-                    alt="linda barret avatar"
-                  />
+                  <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg" alt="linda barret avatar" />
                 </figure>
               </div>
               <div class="media-content">
@@ -498,5 +483,6 @@
     </div>
     <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  </body>
+</body>
+
 </html>
