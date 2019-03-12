@@ -1,5 +1,5 @@
 .svg-wrapper {
-	margin: 0 auto;
+  margin: 0 auto;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -39,4 +39,8 @@
 .svg-wrapper:hover .shape {
   -webkit-animation: 0.5s draw linear forwards;
   animation: 0.5s draw linear forwards;
+}
+
+.hover-button:hover {
+  background-color: hsl(171, 100%, 41%) !important;
 }
