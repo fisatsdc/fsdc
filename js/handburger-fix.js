@@ -31,7 +31,7 @@ if (navbarItem) {
     }
   });
 }
-
+/*
 //To close hamburger-menu when clicked anywhere
 window.onclick = function(event) {
   if(navbarMenu.hasClass('is-active')) {
@@ -43,3 +43,4 @@ window.onclick = function(event) {
     }
   }
 }
+*/
