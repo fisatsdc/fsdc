@@ -31,15 +31,3 @@ if (navbarItem) {
     }
   });
 }
-
-//To close hamburger-menu when clicked anywhere
-window.onclick = function(event) {
-  if(navbarMenu.hasClass('is-active')) {
-    click_count = click_count +1;
-    if (click_count%2 == 0) {
-      console.log('enter if');
-      burger.classList.toggle("is-active");
-      menu.classList.toggle("is-active");
-    }
-  }
-}
