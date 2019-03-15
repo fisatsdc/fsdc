@@ -2,6 +2,9 @@ var body = $("body");
 var burger = document.querySelector(".burger");
 var menu = document.querySelector("#" + burger.dataset.target);
 var navbarItem = document.querySelectorAll(".navbar-item");
+var navbarMenu = $('.navbar-menu');
+var click_count = 0;
+
 if (navbarItem) {
   navbarItem.forEach(function(el) {
     if (!el.innerHTML.includes("REGISTER")) {
