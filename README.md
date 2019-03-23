@@ -6,8 +6,6 @@ Official FSDC website.[WIP]
 
 Start by [installing yarn](https://yarnpkg.com/en/docs/install#debian-stable) for project management. Then install all the dependencies by running `yarn install` in the project directory.
 
-Strictly follow the [contribution guidelines](https://github.com/fisatsdc/fsdc/blob/master/CONTRIBUTING.md).
-
 # Issues
 
 Raise an issue while finding bugs, adding new features and for suggesting enhancements.
