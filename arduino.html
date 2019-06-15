@@ -776,8 +776,27 @@
     );
 
     marker.bindPopup(popup);
+    mymap.on('popupopen', function() {
+        setTimeout(function() {
+          marker.closePopup();
+        }, 2000); 
+    });
+
+    marker.openPopup();
     marker.on("mouseover", function(e) {
       this.openPopup();
     });
+
+    $(document).click(function(e){
+        if ($(e.target).is('#map,#map *')) {
+            return;
+        }
+        else
+        {
+          //Perform your event operations
+          marker.closePopup();
+        }
+    });
+
   </script>
 </html>
